@@ -1,0 +1,375 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+}
+
+#wrap {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+header {
+    /* background: #EEE; */
+    position: relative;
+    /* z-index: -1; */
+}
+
+header h1 {
+    /* text-align: center; */
+    padding: 1rem;
+    position: absolute;
+    top: 1rem;
+    left: 2rem;
+    font-family: "Damion", cursive;
+    color: #ffffff
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    /* 固定部分の奥行き */
+}
+
+nav {
+    position: absolute;
+    top: 2rem;
+    right: 5rem;
+}
+
+nav ul {
+    padding-bottom: 1rem;
+    margin: 0;
+    text-align: center;
+    font-size: 25px;
+}
+
+ul {
+    text-align: center;
+    /* font-family: "Hina Mincho", serif; */
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+    right: 1rem;
+}
+
+nav ul li a {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+
+
+/* ここからcontent */
+
+
+.content-area {
+    
+    padding: 2.5rem;
+    max-width: 1200px flex-grow 1;
+
+}
+
+
+main{
+    unicode-bidi: isolate;/*テキスト表示の対応*/
+    padding-bottom: 0%;
+}
+
+
+section {
+    background: #ffffff;
+    padding: 150px 0;
+
+}
+
+
+.lead{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+    padding: 80vh 0 0 0;
+}
+
+.lead-area{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap /*flexアイテムを一行に押し込むか複数行に押し込むか */
+}
+
+
+.lead-heading{
+    position: absolute;
+    left: 200px;
+    width: 60%;
+    padding-top: 18vh;
+    padding-left: 8vh;
+    padding-bottom: 40vh;
+    /* フォント */
+    font-family: "Kaisei Tokumin", serif;
+  font-weight: 400;
+  font-style: bold;
+  font-size: 30px;
+
+}
+
+.lead-heading2{
+    position: absolute;
+    left: 180px;
+    width: 60%;
+    padding-top: 26vh;
+    padding-left: 10vh;
+    padding-bottom: 40vh;
+    /* フォント */
+    font-family: "Kaisei Tokumin", serif;
+  font-weight: 400;
+  font-style: bold;
+  font-size: 40px;
+}
+
+
+
+.lead-desc{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    height: 16em;
+    padding-top: 15vh;
+    padding-right: 15vh;
+    text-align: left;
+    /* フォント */
+    font-family: "Zen Old Mincho", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+}
+
+.about-btn{
+    padding-top: 27vh;
+    display: block;
+  width: 200px;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+.history{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+    padding: 80vh 0 0 0;
+}
+
+.history-heading{
+    display: block;
+    /* width: 180px; */
+    text-align: center;
+    margin: 0 auto;
+    /* padding-top: 5vh; */
+    /* フォント */
+    font-family: "Kaisei Tokumin", serif;
+  font-weight: 400;
+  font-style: bold;
+  font-size: 30px;
+
+}
+
+.history-desc{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    /* height: 16em; */
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 6vh; 
+    /* フォント */
+    font-family: "Zen Old Mincho", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+}
+
+.history-btn{
+    padding-top: 50px;
+    display: block;
+  width: 200px;
+  margin: 0 auto;
+}
+
+.sound{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+    padding: 80vh 0 0 0;
+}
+
+.sound-heading{
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 30px;
+
+    /* フォント */
+    font-family: "Kaisei Tokumin", serif;
+  font-weight: 400;
+  font-style: bold;
+  font-size: 30px;
+
+}
+
+.soundbtn{
+    display: block;
+    margin: 0 auto;
+
+}
+
+
+.sound-desc{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    /* height: 16em; */
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 6vh; 
+    /* フォント */
+    font-family: "Zen Old Mincho", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+}
+
+.player{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+    padding: 80vh 0 0 0;
+}
+
+.player-heading{
+    display: block;
+    /* width: 180px; */
+    text-align: center;
+    margin: 0 auto;
+    /* padding-top: 5vh; */
+    /* フォント */
+    font-family: "Kaisei Tokumin", serif;
+  font-weight: 400;
+  font-style: bold;
+  font-size: 30px;
+
+}
+
+.player-desc{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    /* height: 16em; */
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 6vh; 
+    /* フォント */
+    font-family: "Zen Old Mincho", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+}
+
+.player-btn{
+    padding-top: 50px;
+    display: block;
+  width: 120px;
+  margin: 0 auto;
+}
+
+
+/* コラムエリアCSS */
+
+/* .container {
+    display: flex;
+    gap: 50px;
+    flex-direction: row-reverse;
+}
+
+.soundview {
+    display: flex;
+    gap: 50px;
+    flex-direction: row;
+}
+
+.column-img {
+    flex: 1;
+}
+
+.column-text {
+    flex: 2;
+} */
+
+
+
+/* footerーarea */
+
+footer {
+    background: #333;
+    color: #FFF;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+
+}
+
+.footertext{
+    font-family: "Damion", cursive;
+}
+
+
+
+/*検証のためのCSS*/
+/* section{
+padding: 500px 0;
+} */
+
+
+a.pagetop {
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 12px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color:  #DBB82E;
+    color: #FFF;
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
