@@ -1,0 +1,901 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+img {
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    height: 100%;
+}
+
+#wrap {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #327d64;
+}
+
+/* header */
+
+/* その場で */
+.fadeIn {
+    animation-name: fadeInAnime;
+    animation-duration: 1.6s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes fadeInAnime {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* スマートフォン用 */
+/* 1em = 16px */
+/* 36emまでの大きさ */
+
+@media only screen and (max-width:36em) {
+    header {
+        /* headerエリアを横幅全体に広げ、固定 */
+        width: 100%;
+        position: fixed;
+        padding: 2.5vw 5vw 0 4vw;
+        z-index: 9999;
+        background-color: #333;
+        border-radius: 30px;
+        /* 角を丸くする */
+        margin-top: 10px;
+
+    }
+
+    .header-icon {
+        width: 11vw;
+        height: 6.5vw;
+        display: flex;
+        padding-bottom: 8px;
+        /* padding-left: 10px; */
+        /* opacity: 0; */
+    }
+
+    nav {
+        width: auto;
+        height: auto;
+        position: absolute;
+        top: 1.2vw;
+        right: 0;
+
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+
+    }
+
+    nav ul li {
+        padding-right: 18px;
+        margin: 0 auto;
+    }
+
+    nav ul li a {
+        /* text-decoration: none; */
+        font-family: Georgia;
+        font-weight: bold;
+        font-size: 10px;
+        color: #daab59;
+    }
+
+}
+
+/* iPad用 */
+/* 36em以上になったらの大きさ */
+
+@media only screen and (min-width:36em) {
+    header {
+        /* headerエリアを横幅全体に広げ、固定 */
+        width: 100%;
+        position: fixed;
+        padding: 1vw 5vw 0 3vw;
+        z-index: 9999;
+    }
+
+    .header-icon {
+        width: 8vw;
+        height: 7vw;
+        display: flex;
+    }
+
+    nav {
+        width: auto;
+        height: auto;
+        position: absolute;
+        top: 2.8vw;
+        right: .7vw;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+    }
+
+    nav ul li {
+        padding-right: 1.2rem;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        font-family: Georgia;
+        font-weight: bold;
+        color: #daab59;
+    }
+}
+
+
+/* PC用 */
+/* 64em以上の大きさ */
+
+@media only screen and (min-width:64em) {
+    header {
+        /* headerエリアを横幅全体に広げ、固定 */
+        width: 100%;
+        position: fixed;
+        padding: 1.5vw 4vw 0 2.8vw;
+        z-index: 9999;
+    }
+
+    .header-icon {
+        width: 7vw;
+        height: 4.7vw;
+        display: flex;
+    }
+
+    nav {
+        width: auto;
+        height: auto;
+        position: absolute;
+        top: 2.8vw;
+        right: .5vw;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+    }
+
+    nav ul li {
+        padding-right: 1.8rem;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        font-family: Georgia;
+        font-weight: bold;
+        color: #daab59;
+    }
+}
+
+
+
+
+/* Main */
+
+.fade {
+    opacity: 0;
+    transform: translateY(170px);
+    transition: opacity 3s, transform 1s;
+}
+
+.fade.active {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+
+/* ボタンの設定 */
+/*== 下線が伸びて背景に変わる　*/
+
+.btnlinestretches3 {
+    /*線の基点とするためrelativeを指定*/
+    position: relative;
+    /*ボタンの形状*/
+    color: #daab59;
+    padding: 10px 30px;
+    display: inline-block;
+    text-decoration: none;
+    outline: none;
+}
+
+/*テキストの設定*/
+.btnlinestretches3 span {
+    /*テキストを前面に出すためz-indexの値を高く設定*/
+    position: relative;
+    z-index: 2;
+}
+
+.btnlinestretches3:hover span {
+    color: #fff;
+}
+
+/*線の設定*/
+.btnlinestretches3::after {
+    content: '';
+    /*絶対配置で線の位置を決める*/
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    /*線の形状*/
+    background: #daab59;
+    width: 100%;
+    height: 3px;
+    /*アニメーションの指定*/
+    transition: all 0.3s ease-in-out;
+}
+
+/*線が伸びて背景に*/
+.btnlinestretches3:hover::after {
+    height: 100%;
+}
+
+
+/*表示するテキストが切り替わる*/
+.btntextchange {
+    /*テキストの基点とするためrelativeを指定*/
+    position: relative;
+    /*ボタンの形状*/
+    border: 2.3px solid #daab59;
+    border-radius: 25px;
+    min-width: 210px;
+    padding: 20px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    color: #daab59;
+    outline: none;
+    /*アニメーションの指定*/
+    transition: all .2s;
+}
+
+/*hoverした際の変化*/
+.btntextchange:hover {
+    background: #daab59;
+    color: #fff;
+}
+
+.btntextchange span {
+    /*絶対配置でテキストの位置を決める*/
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /*アニメーションの指定*/
+    transition: all .5s;
+    /*ブロック要素にしてテキスト折り返しなし*/
+    display: block;
+    white-space: nowrap;
+}
+
+/*差し替わるテキストの設定*/
+.btntextchange span:nth-child(2) {
+    opacity: 0;
+    /*透過0に*/
+}
+
+/*hoverするとテキストが入れ替わる設定*/
+.btntextchange:hover span:nth-child(1) {
+    opacity: 0;
+    /*透過0に*/
+}
+
+.btntextchange:hover span:nth-child(2) {
+    opacity: 1;
+    /*不透明に*/
+}
+
+
+
+
+
+
+
+/* スマートフォン用 */
+
+@media only screen and (max-width:45em) {
+    .mainVisual {
+        width: 100%;
+        height: 400px;
+        position: relative;
+        overflow: hidden;
+        /* margin-bottom: 0; */
+    }
+
+    .mv {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        object-fit: cover;
+        /* opacity: 0.7; */
+    }
+
+    .main-logo {
+        position: absolute;
+        width: 100%;
+        margin: 0 auto;
+        padding: 125px 95px;
+        z-index: 1;
+    }
+
+    .about {
+        /* padding-top: 150px; */
+        width: 100%;
+        font-size: 18px;
+        z-index: 999;
+        background-color: #327d64;
+    }
+
+    .about-visual img {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding: 10px 160px 0 20px;
+
+    }
+
+    .about-catch {
+        padding: 60px 32px 50px 0;
+        text-align: right;
+        color: #fff;
+    }
+
+    .title-logo {
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+        padding: 0 10px 5px 80px;
+    }
+
+
+
+    .main-title {
+        font-size: 30px;
+        padding-right: 3px;
+    }
+
+    .sub-title {
+        padding-top: 5px;
+        font-size: 17px;
+        font-family: HiraMinProN-W6;
+    }
+
+
+    .about-desc {
+        padding: 25px 55px 10px 55px;
+        color: #fff;
+        font-family: HiraMinProN-W3;
+
+    }
+
+    .about-desc p {
+        font-size: 15px;
+    }
+
+    .about-visual2 {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding: 35px 30px 10px 200px;
+    }
+
+    .about-visual3 {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding: 10px 200px 0 35px;
+    }
+
+    .history-area,
+    .sound-area,
+    .player-area,
+    .contact-area {
+        padding: 55px;
+    }
+
+    .history-heading,
+    .sound-heading,
+    .player-heading {
+        /* text-align: center; */
+        color: #daab59;
+        font-family: Georgia;
+        font-size: 20px;
+    }
+
+    .history-desc,
+    .sound-desc,
+    .player-desc,
+    .contact-desc {
+        /* text-align: center; */
+        color: #fff;
+        font-family: HiraMinProN-W3;
+        font-size: 15px;
+        padding-top: 40px;
+        padding-bottom: 30px;
+    }
+
+    .history-btn,
+    .sound-btn,
+    .player-btn {
+        text-align: center;
+        /* ボタンを真ん中に持ってくる */
+    }
+
+    .classic-btn,
+    .pop-btn,
+    .jazz-btn,
+    .other-btn {
+        position: relative;
+        padding: 40px;
+    }
+
+    .classic-btn a,
+    .pop-btn a,
+    .jazz-btn a,
+    .other-btn a {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        /*以下装飾*/
+        margin: 0;
+        /*余計な隙間を除く*/
+        font-size: 20px;
+        /*文字サイズ*/
+        border: solid white 2px;
+        /*線で囲う*/
+        padding: 7px;
+        /*文字と線の間の余白*/
+        color: white;
+        /*文字色*/
+        text-decoration: none;
+        /*下線を表示させない*/
+
+    }
+
+    .example a:hover {
+        /*カーソルを当てたとき*/
+        background: rgba(255, 255, 255, 0.3);
+        /*背景を半透明に*/
+    }
+
+    .example img {
+        width: 100%;
+    }
+
+    .contact-desc {
+        text-align: center;
+    }
+
+
+    .contact-btn {
+        text-align: center;
+    }
+
+}
+
+/* iPad用 */
+
+@media only screen and (min-width:45em) {
+    .mainVisual {
+        width: 100%;
+        height: 750px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .mv {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        object-fit: cover;
+        /* opacity: 0.7; */
+    }
+
+    .main-logo {
+        position: absolute;
+        width: 100%;
+        margin: 0 auto;
+        padding: 250px 180px 0 180px;
+        z-index: 1;
+    }
+
+
+    .about {
+        width: 100%;
+        padding-top: 50px;
+        z-index: 999;
+    }
+
+    .about-visual img {
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+        padding: 10px 280px 40px 40px;
+
+    }
+
+    .about-catch {
+        padding: 50px 32px 50px 32px;
+        text-align: center;
+        color: #fff;
+    }
+
+    .title-logo {
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+        padding: 0 65px;
+    }
+
+    /* .main-title {
+        font-size: 38px;
+    } */
+
+    .sub-title {
+        font-size: 23px;
+        padding-top: 6px;
+        font-family: HiraMinProN-W6;
+    }
+
+    .about-desc {
+        padding: 35px 55px 65px 55px;
+        text-align: center;
+        color: #fff;
+        font-family: HiraMinProN-W3;
+
+    }
+
+    .about-desc p {
+        font-size: 17.6px;
+    }
+
+    .about-visual2 {
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+        padding: 30px 40px 30px 350px;
+    }
+
+    .about-visual3 {
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+        padding: 30px 350px 30px 50px;
+    }
+
+    .history-area,
+    .sound-area,
+    .player-area,
+    .contact-area {
+        padding: 65px;
+    }
+
+    .history-heading,
+    .sound-heading,
+    .player-heading {
+        text-align: center;
+        color: #daab59;
+        font-family: Georgia;
+        font-size: 22px;
+    }
+
+    .history-desc,
+    .sound-desc,
+    .player-desc,
+    .contact-desc {
+        text-align: center;
+        color: #fff;
+        font-family: HiraMinProN-W3;
+        font-size: 15px;
+        padding-top: 40px;
+        padding-bottom: 30px;
+    }
+
+    .link-btn{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .history-btn,
+    .sound-btn,
+    .player-btn {
+        text-align: center;
+        /* ボタンを真ん中に持ってくる */
+    }
+
+    .classic-btn,
+    .pop-btn,
+    .jazz-btn,
+    .other-btn {
+        position: relative;
+        padding: 25px;
+    }
+
+    .classic-btn a,
+    .pop-btn a,
+    .jazz-btn a,
+    .other-btn a {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        /*以下装飾*/
+        margin: 0;
+        /*余計な隙間を除く*/
+        font-size: 20px;
+        /*文字サイズ*/
+        border: solid white 2px;
+        /*線で囲う*/
+        padding: 7px;
+        /*文字と線の間の余白*/
+        color: white;
+        /*文字色*/
+        text-decoration: none;
+        /*下線を表示させない*/
+
+    }
+
+    .example a:hover {
+        /*カーソルを当てたとき*/
+        background: rgba(255, 255, 255, 0.3);
+        /*背景を半透明に*/
+    }
+
+    .example img {
+        width: 100%;
+    }
+
+    .contact-desc {
+        text-align: center;
+    }
+
+
+    .contact-btn {
+        text-align: center;
+    }
+
+
+}
+
+/* PC用 */
+
+@media only screen and (min-width:65em) {
+    .mainVisual {
+        width: 100%;
+        height: 1200px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .mv {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        object-fit: cover;
+        /* opacity: 0.7; */
+    }
+
+    .main-logo {
+        position: absolute;
+        width: 100%;
+        margin: 0 auto;
+        padding: 320px 310px 0 310px;
+        z-index: 1;
+    }
+
+
+    .about {
+        width: 100%;
+        padding-top: 50px;
+        z-index: 999;
+    }
+
+    .about-visual img {
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+        padding: 80px 570px 40px 70px;
+        opacity: 0.8;
+
+    }
+
+    .about-catch {
+        padding: 0 32px 50px 32px;
+        text-align: center;
+        color: #fff;
+    }
+
+    .title-logo {
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+        padding: 50px 180px 0 180px;
+    }
+
+    .sub-title {
+        font-size: 30px;
+        padding-top: 5px;
+        font-family: HiraMinProN-W6;
+    }
+
+    .about-desc {
+        padding: 10px 55px 65px 55px;
+        text-align: center;
+        color: #fff;
+        font-family: HiraMinProN-W3;
+
+    }
+
+    .about-desc p {
+        font-size: 20px;
+    }
+
+    .about-visual2 {
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+        padding: 10px 80px 30px 550px;
+        opacity: 0.8;
+    }
+
+    .about-visual3 {
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+        padding: 40px 560px 30px 85px;
+        opacity: 0.8;
+    }
+
+    .history-area,
+    .sound-area,
+    .player-area,
+    .contact-area {
+        padding: 75px;
+    }
+
+    .history-heading,
+    .sound-heading,
+    .player-heading {
+        text-align: center;
+        color: #daab59;
+        font-family: Georgia;
+        font-size: 25px;
+    }
+
+    .history-desc,
+    .sound-desc,
+    .player-desc,
+    .contact-desc {
+        text-align: center;
+        color: #fff;
+        font-family: HiraMinProN-W3;
+        font-size: 18px;
+        padding-top: 40px;
+        padding-bottom: 30px;
+    }
+
+    .link-btn{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    }
+
+    .history-btn,
+    .sound-btn,
+    .player-btn {
+        text-align: center;
+        /* ボタンを真ん中に持ってくる */
+    }
+
+    .classic-btn,
+    .pop-btn,
+    .jazz-btn,
+    .other-btn {
+        position: relative;
+        padding: 20px;
+    }
+
+    .classic-btn a,
+    .pop-btn a,
+    .jazz-btn a,
+    .other-btn a {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        /*以下装飾*/
+        margin: 0;
+        /*余計な隙間を除く*/
+        font-size: 25px;
+        /*文字サイズ*/
+        border: solid white 2px;
+        /*線で囲う*/
+        padding: 7px;
+        /*文字と線の間の余白*/
+        color: white;
+        /*文字色*/
+        text-decoration: none;
+        /*下線を表示させない*/
+
+    }
+
+    .example a:hover {
+        /*カーソルを当てたとき*/
+        background: rgba(255, 255, 255, 0.3);
+        /*背景を半透明に*/
+    }
+
+    .example img {
+        width: 100%;
+    }
+
+    .contact-desc {
+        text-align: center;
+    }
+
+
+    .contact-btn {
+        text-align: center;
+    }
+
+}
+
+
+
+
+
+
+
+/* footer */
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 2.5rem;
+    width: 100%;
+    z-index: 100;
+}
