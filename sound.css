@@ -1,0 +1,675 @@
+.sound-about {
+	padding: 300px 50px 10px 50px;
+
+}
+
+.heading,
+.heading2 {
+
+	text-align: center;
+	color: #fff;
+	font-family: HiraMinProN-W6;
+	font-size: 23px;
+
+}
+
+
+
+.overview {
+	padding: 80px 50px;
+}
+
+.overview p {
+	color: #fff;
+	font-family: HiraMinProN-W3;
+}
+
+
+.other-overview,
+.classic-overview,
+.pop-overview,
+.jazz-overview {
+	padding: 50px;
+}
+
+
+.classic-overview h2 {
+	color: #fff;
+	font-family: "Times New Roman";
+	font-size: 40px;
+}
+
+.classic-overview p {
+	padding-top: 30px;
+	color: #fff;
+	font-family: HiraMinProN-W3;
+}
+
+.classic1,
+.classic2 {
+	padding: 40px 50px;
+}
+
+.classic1 h2,
+.classic2 h2 {
+	color: #fff;
+	font-family: "Times New Roman";
+	font-size: 13px;
+}
+
+.classicmovie1,
+.classicmovie2 {
+	width: 100%;
+	height: 280px;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
+
+.pop-overview h2 {
+	color: #333;
+	font-family: "Arial Black";
+	font-size: 35px;
+}
+
+.pop-overview p {
+	padding-top: 30px;
+	color: #333;
+	font-family: "ヒラギノ角ゴ ProN W3";
+}
+
+.pop1,
+.pop2,
+.pop3,
+.pop4 {
+	padding: 40px 50px;
+}
+
+.pop1 h2,
+.pop2 h2,
+.pop3 h2,
+.pop4 h2 {
+	color: #333;
+	font-family: "Arial Black";
+	font-weight: 50;
+	font-size: 13px;
+}
+
+.popmovie1,
+.popmovie2,
+.popmovie3,
+.popmovie4 {
+	width: 100%;
+	height: 280px;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
+.jazz-overview h2 {
+	color: #fff;
+	font-family: Impact;
+	font-size: 43px;
+	letter-spacing: .03em;
+}
+
+.jazz-overview p {
+	padding-top: 30px;
+	color: #fff;
+	font-family: HiraMinProN-W3;
+}
+
+.jazz1,
+.jazz2,
+.jazz3 {
+	padding: 40px 50px;
+}
+
+.jazz1 h2,
+.jazz2 h2,
+.jazz3 h2 {
+	color: #fff;
+	font-family: Impact;
+	font-weight: 50;
+	font-size: 13px;
+}
+
+.jazzmovie1,
+.jazzmovie2,
+.jazzmovie3 {
+	width: 100%;
+	height: 280px;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
+
+
+
+
+
+.other-overview h2 {
+	color: #333;
+	/* font-family: HiraMinProN-W6; */
+	font-family: "Kaisei Opti", serif;
+	font-size: 27px;
+	font-weight: 800;
+	font-style: normal;
+}
+
+
+.other-overview p {
+	padding-top: 30px;
+	color: #fff;
+	/* font-family:HiraMinProN-W3 ; */
+	font-family: "Kaisei Opti", serif;
+}
+
+.other1,
+.other2,
+.other3,
+.other4 {
+	padding: 40px 50px;
+}
+
+.other1 h2,
+.other2 h2,
+.other3 h2,
+.other4 h2 {
+	color: #333;
+	font-family: "Kaisei Opti", serif;
+	font-size: 13px;
+}
+
+
+.othermovie1,
+.othermovie2,
+.othermovie3,
+.othermovie4 {
+	width: 100%;
+	height: 280px;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
+/* iPad用 */
+
+@media only screen and (min-width:45em) {
+	.sound-about {
+		padding: 300px 50px 20px 50px;
+
+	}
+
+	.heading,
+	.heading2 {
+
+		text-align: center;
+		color: #fff;
+		font-family: HiraMinProN-W6;
+		font-size: 40px;
+
+	}
+
+	
+
+	.overview {
+		padding: 80px 50px;
+	}
+
+	.overview p {
+		color: #fff;
+		font-family: HiraMinProN-W3;
+	}
+
+
+	.other-overview,
+	.classic-overview,
+	.pop-overview,
+	.jazz-overview {
+		padding: 70px;
+	}
+
+
+	.classic-overview h2 {
+		color: #fff;
+		font-family: "Times New Roman";
+		font-size: 40px;
+	}
+
+	.classic-overview p {
+		padding-top: 30px;
+		color: #fff;
+		font-family: HiraMinProN-W3;
+	}
+
+	.classic1,
+	.classic2 {
+		padding: 50px 70px;
+	}
+
+	.classic1 h2,
+	.classic2 h2 {
+		color: #fff;
+		font-family: "Times New Roman";
+		font-size: 18px;
+	}
+
+	.classicmovie1,
+	.classicmovie2 {
+		width: 100%;
+		height: 430px;
+		margin: 0 auto;
+		padding-top: 20px;
+	}
+
+
+	.pop-overview h2 {
+		color: #333;
+		font-family: "Arial Black";
+		font-size: 35px;
+	}
+
+	.pop-overview p {
+		padding-top: 30px;
+		color: #333;
+		font-family: "ヒラギノ角ゴ ProN W3";
+	}
+
+	.pop1,
+	.pop2,
+	.pop3,
+	.pop4 {
+		padding: 50px 70px;
+	}
+
+	.pop1 h2,
+	.pop2 h2,
+	.pop3 h2,
+	.pop4 h2 {
+		color: #333;
+		font-family: "Arial Black";
+		font-weight: 50;
+		font-size: 18px;
+	}
+
+	.popmovie1,
+	.popmovie2,
+	.popmovie3,
+	.popmovie4 {
+		width: 100%;
+		height: 430px;
+		margin: 0 auto;
+		padding-top: 20px;
+	}
+
+	.jazz-overview h2 {
+		color: #fff;
+		font-family: Impact;
+		font-size: 43px;
+		letter-spacing: .03em;
+	}
+
+	.jazz-overview p {
+		padding-top: 30px;
+		color: #fff;
+		font-family: HiraMinProN-W3;
+	}
+
+	.jazz1,
+	.jazz2,
+	.jazz3 {
+		padding: 50px 70px;
+	}
+
+	.jazz1 h2,
+	.jazz2 h2,
+	.jazz3 h2 {
+		color: #fff;
+		font-family: Impact;
+		font-weight: 50;
+		font-size: 18px;
+	}
+
+	.jazzmovie1,
+	.jazzmovie2,
+	.jazzmovie3 {
+		width: 100%;
+		height: 430px;
+		margin: 0 auto;
+		padding-top: 20px;
+	}
+
+
+
+
+
+
+	.other-overview h2 {
+		color: #333;
+		/* font-family: HiraMinProN-W6; */
+		font-family: "Kaisei Opti", serif;
+		font-size: 30px;
+		font-weight: 800;
+		font-style: normal;
+	}
+
+
+	.other-overview p {
+		padding-top: 30px;
+		color: #fff;
+		/* font-family:HiraMinProN-W3 ; */
+		font-family: "Kaisei Opti", serif;
+	}
+
+	.other1,
+	.other2,
+	.other3,
+	.other4 {
+		padding: 50px 70px;
+	}
+
+	.other1 h2,
+	.other2 h2,
+	.other3 h2,
+	.other4 h2 {
+		color: #333;
+		font-family: "Kaisei Opti", serif;
+		font-size: 18px;
+	}
+
+
+	.othermovie1,
+	.othermovie2,
+	.othermovie3,
+	.othermovie4 {
+		width: 100%;
+		height: 430px;
+		margin: 0 auto;
+		padding-top: 20px;
+	}
+}
+
+/* PC用 */
+
+@media only screen and (min-width:65em){
+	.sound-about {
+		padding: 280px 50px 80px 50px;
+
+	}
+
+	.heading,
+	.heading2 {
+
+		text-align: center;
+		color: #fff;
+		font-family: HiraMinProN-W6;
+		font-size: 50px;
+
+	}
+
+	.heading{
+		padding-right: 30px;
+	}
+
+	
+
+	.overview {
+		padding: 80px 50px;
+	}
+
+	.overview p {
+		color: #fff;
+		font-family: HiraMinProN-W3;
+	}
+
+
+	.other-overview,
+	.classic-overview,
+	.pop-overview,
+	.jazz-overview {
+		padding: 110px;
+		/* display: grid;
+        grid-template-columns: 1fr 1fr; */
+
+	}
+
+
+	.classic-overview h2 {
+		padding-top: 50px;
+		color: #fff;
+		font-family: "Times New Roman";
+		font-size: 75px;
+		text-align: center;
+	}
+
+	.classic-overview p {
+		padding-top: 40px;
+		color: #fff;
+		font-family: HiraMinProN-W3;
+		text-align: center;
+		font-size: 20px;
+	}
+
+
+	.classic-lead{
+		display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-top: 60px;
+	}
+
+	.classic1,
+	.classic2 {
+		padding: 0 70px 170px;
+	}
+
+	.classic1 h2,
+	.classic2 h2 {
+		color: #fff;
+		font-family: "Times New Roman";
+		font-size: 28px;
+	}
+
+	.classicmovie1,
+	.classicmovie2 {
+		width: 100%;
+		height: 350px;
+		margin: 0 auto;
+		padding-top: 30px;
+	}
+
+
+	.pop-overview h2 {
+		/* padding-top: 30px; */
+		color: #333;
+		font-family: "Arial Black";
+		font-size: 80px;
+		text-align: center;
+	}
+
+	.pop-overview p {
+		padding-top: 40px;
+		color: #333;
+		font-family: "ヒラギノ角ゴ ProN W3";
+		font-size: 20px;
+		text-align: center;
+	}
+
+	.pop-lead{
+		display: grid;
+        grid-template-columns: 1fr 1fr;
+		padding-top: 60px;
+
+	}
+
+	.pop1,
+	.pop2,
+	.pop3,
+	.pop4 {
+		padding: 0 70px 170px;
+
+	}
+
+	.pop1 h2,
+	.pop2 h2,
+	.pop3 h2,
+	.pop4 h2 {
+		color: #333;
+		font-family: "Arial Black";
+		font-weight: 50;
+		font-size: 20px;
+	}
+
+	.popmovie1,
+	.popmovie2,
+	.popmovie3,
+	.popmovie4 {
+		width: 100%;
+		height: 350px;
+		margin: 0 auto;
+		padding-top: 30px;
+	}
+
+	.jazz-overview h2 {
+		/* padding-top: 30px; */
+		color: #fff;
+		font-family: Impact;
+		font-size: 80px;
+		letter-spacing: .03em;
+		text-align: center;
+	}
+
+	.jazz-overview p {
+		padding-top: 30px;
+		color: #fff;
+		font-size: 20px;
+		font-family: HiraMinProN-W3;
+		text-align: center;
+	}
+
+	.jazz-lead{
+		display: grid;
+        grid-template-columns: 1fr 1fr;
+		padding-top: 60px;
+
+	}
+
+	.jazz1,
+	.jazz2,
+	.jazz3 {
+		padding: 0 70px 170px;
+	}
+
+	.jazz1 h2,
+	.jazz2 h2,
+	.jazz3 h2 {
+		color: #fff;
+		font-family: Impact;
+		font-weight: 50;
+		font-size: 20px;
+	}
+
+	.jazzmovie1,
+	.jazzmovie2,
+	.jazzmovie3 {
+		width: 100%;
+		height: 350px;
+		margin: 0 auto;
+		padding-top: 30px;
+
+	}
+
+
+
+
+
+
+	.other-overview h2 {
+		color: #333;
+		font-family: "Kaisei Opti", serif;
+		font-size: 55px;
+		font-weight: 800;
+		font-style: normal;
+		text-align: center;
+	}
+
+
+	.other-overview p {
+		padding-top: 40px;
+		color: #333;
+		font-family: "Kaisei Opti", serif;
+		text-align: center;
+		font-size: 20px;
+	}
+
+	.other-lead{
+		display: grid;
+        grid-template-columns: 1fr 1fr;
+		padding-top: 60px;
+	}
+
+	.other1,
+	.other2,
+	.other3,
+	.other4 {
+		padding: 0 70px 170px;
+	}
+
+	.other1 h2,
+	.other2 h2,
+	.other3 h2,
+	.other4 h2 {
+		color: #333;
+		font-family: "Kaisei Opti", serif;
+		font-size: 20px;
+	}
+
+
+	.othermovie1,
+	.othermovie2,
+	.othermovie3,
+	.othermovie4 {
+		width: 100%;
+		height: 350px;
+		margin: 0 auto;
+		padding-top: 30px;
+	}
+}
+
+
+
+
+/*========= waveを描画するエリア設定 ===============*/
+
+
+.wave {
+	position: relative;
+	padding: 100px 0;
+	
+	
+}
+
+.wave:nth-child(1) {
+	background: #327d64;
+}
+
+.wave:nth-child(2) {
+	background: #541616;
+}
+
+.wave:nth-child(3) {
+	background: #d1e482;
+}
+
+.wave:nth-child(4) {
+	background: #181b57;
+}
+
+.wave:nth-child(5) {
+	background: #e4a751;
+}
+
+.wave canvas {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
