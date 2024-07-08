@@ -420,13 +420,15 @@ body {
     .history-area,
     .sound-area,
     .player-area,
-    .contact-area {
+    .contact-area,
+    .aboutme-area {
         padding: 55px;
     }
 
     .history-heading,
     .sound-heading,
-    .player-heading {
+    .player-heading,
+    .aboutme-heading {
         /* text-align: center; */
         color: #daab59;
         font-family: Georgia;
@@ -436,7 +438,8 @@ body {
     .history-desc,
     .sound-desc,
     .player-desc,
-    .contact-desc {
+    .contact-desc,
+    .aboutme-desc {
         /* text-align: center; */
         color: #fff;
         font-family: HiraMinProN-W3;
@@ -602,13 +605,15 @@ body {
     .history-area,
     .sound-area,
     .player-area,
-    .contact-area {
+    .contact-area,
+    .aboutme-area {
         padding: 65px;
     }
 
     .history-heading,
     .sound-heading,
-    .player-heading {
+    .player-heading,
+    .aboutme-heading {
         text-align: center;
         color: #daab59;
         font-family: Georgia;
@@ -618,7 +623,8 @@ body {
     .history-desc,
     .sound-desc,
     .player-desc,
-    .contact-desc {
+    .contact-desc,
+    .aboutme-desc {
         text-align: center;
         color: #fff;
         font-family: HiraMinProN-W3;
@@ -790,13 +796,15 @@ body {
     .history-area,
     .sound-area,
     .player-area,
-    .contact-area {
+    .contact-area,
+    .aboutme-area {
         padding: 75px;
     }
 
     .history-heading,
     .sound-heading,
-    .player-heading {
+    .player-heading,
+    .aboutme-heading {
         text-align: center;
         color: #daab59;
         font-family: Georgia;
@@ -806,7 +814,8 @@ body {
     .history-desc,
     .sound-desc,
     .player-desc,
-    .contact-desc {
+    .contact-desc,
+    .aboutme-desc {
         text-align: center;
         color: #fff;
         font-family: HiraMinProN-W3;
